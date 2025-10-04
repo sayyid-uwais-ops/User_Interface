@@ -1,0 +1,172 @@
+/* Base Styles */
+body {
+  background: #e5eaf5;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* New Feature: Subtle Background Animation/Texture */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Subtle radial gradient to center the focus */
+    background: radial-gradient(circle at center, rgba(160, 210, 235, 0.05) 0%, transparent 70%);
+    z-index: -1;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 16px;
+  /* Updated shadow for a deeper, softer look */
+  box-shadow: 0 8px 30px rgba(132, 88, 179, 0.2);
+  padding: 32px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px rgba(132, 88, 179, 0.3);
+}
+
+/* Buttons - Group Pulse (New Feature: Keyframe Animation) */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(132, 88, 179, 0.3); }
+    70% { box-shadow: 0 0 0 10px rgba(132, 88, 179, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(132, 88, 179, 0); }
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-bottom: 24px;
+  /* New Feature: Add a subtle pulse to attract attention */
+}
+
+.std-btn {
+  padding: 12px 20px;
+  border: none;
+  background: #8458b3;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s; /* Added box-shadow to transition */
+  box-shadow: 0 4px 12px rgba(132, 88, 179, 0.4); /* Enhanced shadow */
+  /* New Feature: Add a subtle pulse to attract attention */
+  animation: pulse 2s infinite;
+}
+.std-btn:hover {
+  background: #6f42a6;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(132, 88, 179, 0.5); /* Enhanced hover shadow */
+}
+.std-btn:active {
+  transform: scale(0.97);
+}
+/* New Feature: Accessibility/Standard Focus State */
+.std-btn:focus {
+    outline: 4px solid #a0d2eb;
+    outline-offset: 2px;
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background: #d0bdf4;
+  color: #8458b3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.secondary-btn:hover {
+  background: #c1a7f0;
+  transform: translateY(-2px);
+}
+.secondary-btn:active {
+  transform: translateY(0);
+}
+/* New Feature: Accessibility/Standard Focus State */
+.secondary-btn:focus {
+    outline: 3px solid #6f42a6;
+    outline-offset: 2px;
+}
+
+
+/* New Feature: Content Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content */
+.education-content {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  /* Apply the new fade-in animation */
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  /* Updated shadow */
+  box-shadow: 0 4px 15px rgba(132, 88, 179, 0.4);
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.mt-20 { margin-top: 20px; }
+.p-20 { padding: 20px; }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    margin: 30px 16px;
+    padding: 24px;
+  }
+  .std-btn, .secondary-btn {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .std-btn, .secondary-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
