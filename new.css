@@ -93,6 +93,7 @@ body::before {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
+  margin-bottom: 10px;
   transition: background 0.3s, transform 0.2s;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
@@ -118,7 +119,6 @@ body::before {
 
 /* Content */
 .education-content {
-  display:flex;
   margin-top: 20px;
   text-align: center;
   font-size: 16px;
@@ -173,3 +173,4 @@ img:hover {
   }
 
 }
+
