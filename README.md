@@ -59,7 +59,7 @@ Each section dynamically updates the content using JavaScript.
 
 Download or clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sayyid-uwais-ops/User_Interface
 
 Open the project folder
 
