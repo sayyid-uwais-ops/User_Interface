@@ -1,4 +1,4 @@
-🌐 Interactive Web Interface (Receptionist, Root Map, Education)
+#🌐 Interactive Web Interface (Receptionist, Root Map, Education)
 
 This project is a simple, responsive web-based user interface built using HTML, CSS, and JavaScript. It provides an interactive dashboard with three main functionalities:
 
@@ -8,7 +8,8 @@ This project is a simple, responsive web-based user interface built using HTML, 
 
 🎓 Education (AI & Robotics)
 
-🚀 Features
+
+#🚀 Features
 
 ✅ Clean and modern UI design
 
@@ -22,7 +23,8 @@ This project is a simple, responsive web-based user interface built using HTML, 
 
 🧠 Educational content for AI and Robotics
 
-🛠️ Technologies Used
+
+#🛠️ Technologies Used
 
 HTML5 – Structure of the webpage
 
@@ -30,7 +32,8 @@ CSS3 – Styling, animations, responsiveness
 
 JavaScript (Vanilla JS) – Interactivity and dynamic content
 
-📂 Project Structure
+
+#📂 Project Structure
 📁 project-folder
 │── index.html        # Main HTML file
 │── new.css           # Styling file
@@ -45,7 +48,8 @@ Clicking Root Map → Displays an image
 
 Clicking Education → Shows:
 
-AI section
+
+#AI section
 
 Robotics section
 
@@ -65,7 +69,7 @@ index.html
 
 or open it in any browser
 
-📸 Preview
+#📸 Preview
 
 (Add screenshots here after uploading your project)
 
