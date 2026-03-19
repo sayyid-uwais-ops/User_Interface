@@ -71,9 +71,10 @@ or open it in any browser
 
 #📸 Preview
 
-(Add screenshots here after uploading your project)
+<img width="1914" height="967" alt="Screenshot 2026-03-19 140926" src="https://github.com/user-attachments/assets/e0522f9c-d6f6-4ebd-a78c-fd3d2ff25e79" />
 
-🔮 Future Improvements
+
+#🔮 Future Improvements
 
 🔗 Connect Receptionist button to a real Python backend (Flask / Django)
 
